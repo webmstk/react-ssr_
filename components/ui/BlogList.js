@@ -7,7 +7,7 @@ const BlogList = ({ posts }) => (
     'div',
     null,
     _.map(posts, (obj, key) =>
-      React.createElement(BlogItem, _.assign(obj, { key: key }))
+      React.createElement(BlogItem, _.assign({}, obj, { key: key }))
     )
   )
 );
